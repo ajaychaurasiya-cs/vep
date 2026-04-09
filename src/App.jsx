@@ -8,13 +8,13 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-gray-100">
+      <div className="min-h-screen flex flex-col bg-gray-200">
         <Header />
         <main className="flex-grow container mx-auto px-4 py-8">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/vep/" element={<Home />} />
+            <Route path="/vep/about" element={<About />} />
+            <Route path="/vep/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />

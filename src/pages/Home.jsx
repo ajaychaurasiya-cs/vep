@@ -1,4 +1,21 @@
 import VideoCard from '../components/VideoCard';
+import pr from '../assets/pr.webp';
+import ae from '../assets/ae.webp';
+import ps from '../assets/ps.webp';
+import ai from '../assets/ai.webp';
+import fl from '../assets/fl.webp';
+import ca from '../assets/ca.webp';
+import ma from '../assets/ma.webp';
+
+const tools = [
+  {pic:pr, name:"Primiere Pro"},
+  {pic:ae, name:"After Effects"},
+  {pic:ps, name:"Photoshop"},
+  {pic:ca, name:"Cartoon animator 4"},
+  {pic:fl, name:"FL-Studio"},
+  {pic:ai, name:"Ai tools"},
+  {pic:ma, name:"Mobile Apps"},
+]
 
 const videoProjects = [
   {
@@ -34,13 +51,32 @@ export default function Home() {
         </p>
 
         <h4 className='text-xl font-bold '>Services here</h4>
-        <div className='font-bold grid'>
+        <div className='font-bold flex gap-3 flex-wrap bg-slate-300 p-6 rounded-lg shadow-md'>
         <p>- Video Editor </p>
         <p>- 2D Animator</p>
         <p>- Sound Design</p>
         <p>- Graphic Design</p>
-        <p>- Motion Graphic</p>
-        <p>- Image/Photo Editor</p></div>
+        <p>- Motion Graphics</p>
+        <p>- Image/Photo Editor</p>
+        <p>- UI&UX Designer </p>
+        </div>
+        
+        <h3 className="text-xl font-bold mt-5">Professional Tools</h3>
+        
+          <div className="flex flex-wrap gap-3">
+        {tools.map((c,i)=>{
+          return(
+          <div className="bg-slate-300 rounded-lg p-1">
+            <span key={i} className="grid justify-items-center ">
+              <img className=' w-20 h-20 rounded-lg' src={c.pic} alt={c.name} />
+              <p>{c.name}</p>
+            </span>
+          </div>
+          )
+        })}
+        </div>
+        
+        
       </section>
 
       <section>

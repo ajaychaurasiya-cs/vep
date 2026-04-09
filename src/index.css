@@ -2,3 +2,61 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+  #rss {
+    width: 20em;
+    height: 20em;
+    border-radius: 3em;
+    background-color: #ff0000;
+    font-size: 14px;
+  }
+  #rss:before {
+    content: '';
+    z-index: 1;
+    display: block;
+    height: 5em;
+    width: 5em;
+    background: #26ff00;
+    border-radius: 50%;
+    position: relative;
+    top: 11.5em;
+    left: 3.5em;
+  }
+  #rss:after {
+    content: '';
+    display: block;
+    background: #ff0000;
+    width: 13em;
+    height: 13em;
+    top: -2em;
+    left: 3.8em;
+    border-radius: 2.5em;
+    filter: brightness();
+    position: relative;
+    box-shadow:
+      -2em 2em 0 0 #fff inset,
+      -4em 4em 0 0 #ff0000 inset,
+      -6em 6em 0 0 #fff inset
+  }
+  

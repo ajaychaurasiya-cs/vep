@@ -15,15 +15,15 @@ export default function About() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div className="bg-white p-6 rounded-lg shadow-md">
+        {/* <div className="bg-white p-6 rounded-lg shadow-md">
           <FiFilm className="text-4xl mb-4 text-secondary" />
           <h3 className="text-xl font-semibold mb-2">500+ Projects</h3>
           <p className="text-gray-600">Completed video projects for diverse clients</p>
-        </div>
+        </div> */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <FiEdit className="text-4xl mb-4 text-secondary" />
           <h3 className="text-xl font-semibold mb-2">Professional Tools</h3>
-          <p className="text-gray-600">Adobe Premiere, After Effects, Cartoon Animator 4</p>
+          <p className="text-gray-600">Adobe Premiere, After Effects, Photoshop,AI Tools, FL-Studio, Cartoon Animator 4</p>
         </div>
         <div className="bg-white p-6 rounded-lg shadow-md">
           <FiAward className="text-4xl mb-4 text-secondary" />

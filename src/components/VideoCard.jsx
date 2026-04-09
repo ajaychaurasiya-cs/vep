@@ -8,7 +8,7 @@ export default function VideoCard({ title, description, driveLink, thumbnail }) 
     const videoId = getDriveId(driveLink);
   
     return (
-      <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+      <div className="bg-linear-to-bl from-pink-500  to-yellow-500 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
         <div className="relative pb-[56.25%] bg-gray-200">
           {videoId ? (
             <iframe
@@ -30,7 +30,7 @@ export default function VideoCard({ title, description, driveLink, thumbnail }) 
             href={driveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-slate-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+            className="inline-block bg-white  px-4 py-2 rounded hover:bg-gradient-to-br hover:font-semibold hover:to-blue-500 ransition-colors"
           >
             View Full Video
           </a>
